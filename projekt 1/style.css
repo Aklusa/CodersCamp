@@ -1,0 +1,218 @@
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-size: 5.5vh;
+}
+
+h3{
+    font-size: 3vh;
+}
+
+.blue{
+   color:blue;
+   letter-spacing: 3px;
+}
+
+.red{
+    color: rgb(204, 6, 6);
+    letter-spacing: 3px;
+}
+.bg{
+    background: url('img/Ring.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+}
+
+.leftBar{
+    width: 10vw;
+    height: 100vh;
+}
+
+.rightBar{
+    width: 10vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.rightBar .container{
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 30vh;
+    background-color: #000;
+    border: 0.1vw solid #fff;
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    opacity: 0;
+    animation: show 1s ease-in-out 1s 1 normal forwards  ;
+}
+
+.socials{
+    
+    max-width: 100%;
+    max-height: 100%;
+   
+    
+
+    
+}
+
+.social{
+    
+    color: #fff;
+    padding: 1vh;
+    border: 0.1vw solid #fff;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+    text-align: center;
+    max-height: 5vh;
+    max-width: 5vw;
+}
+
+.social:nth-child(1){
+    margin-top: 1vh;
+}
+
+.social a{
+    
+    color: #fff;
+    text-decoration: none;
+    font-size: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: color 0.2s ease-in;
+}
+
+.br:hover{
+    color:#c70300;
+}
+
+.tw:hover {
+    color: #1da1f2;
+}
+
+.fb:hover {
+    color: #4267b2;
+}
+
+.main{
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    
+}
+
+.circle{
+    
+    width: 30vw;
+    height: 80vh;
+    border-radius: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    animation: lightCircle 2s ease-in-out 0s 1 normal forwards  ;
+    
+}
+
+.circle .container {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    color: #fff;
+}
+
+.muhammad{
+   width: 15vw;
+   height: 40vh;
+   border-radius: 50%;
+   transition: transform 1s ease-in 0.3s;
+   
+}
+
+ .blueStar{
+    animation: lightB 2s ease-in-out 0s 1 normal forwards  ;
+}
+ .redStar{
+    animation: lightR 2s ease-in-out 0s 1 normal forwards  ;
+}
+
+ @keyframes lightB {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+    
+        text-shadow:
+	1px 1px 0 blue,
+	-1px 1px 0 blue,
+	-1px -1px 0 blue,
+	-1px 1px 0 blue;
+    opacity: 1;
+    }
+   
+ }
+ @keyframes lightR{
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+    
+        text-shadow:
+	1px 1px 0 rgb(204, 6, 6),
+	-1px 1px 0 rgb(204, 6, 6),
+	-1px -1px 0 rgb(204, 6, 6),
+	-1px 1px 0 rgb(204, 6, 6);
+    opacity: 1;
+    }
+   
+ }
+ 
+    
+ 
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+            
+    100%{
+        opacity: 1;
+    }
+}
+ 
+@keyframes lightCircle {
+ 0%{
+    box-shadow:0px 0px 0px rgb(224, 216, 216), 0px 0px 0px rgb(224, 216, 216);
+ }
+
+ 100%{
+    box-shadow:5px 5px 10px rgb(224, 216, 216), -5px -5px 10px rgb(224, 216, 216);
+ }
+}
+
+
+/* colors
+
+rgb(133, 11, 11);
+rgb(224, 216, 216);
+
+
+ */
