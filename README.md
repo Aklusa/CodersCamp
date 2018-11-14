@@ -1,3 +1,3 @@
 # CodersCamp
 
-React-Redux news app
+React-Redux, responsive, news app
